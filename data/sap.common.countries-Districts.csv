@@ -1,0 +1,92 @@
+code;name;descr;city_code
+AUNSW-D1;CBD;;AU-SYD
+AUNSW-D2;Bondi;;AU-SYD
+AUNSW-D3;Parramatta;;AU-SYD
+AUNSW-D4;Hamilton;;AU-NCL
+AUVIC-D1;Fitzroy;;AU-MEL
+AUVIC-D2;St Kilda;;AU-MEL
+CAON-D1;Downtown;;CA-TOR
+CAON-D2;Scarborough;;CA-TOR
+CAON-D3;Etobicoke;;CA-TOR
+CAON-D4;ByWard Market;;CA-OTT
+CAQC-D1;Plateau;;CA-MTL
+CAQC-D2;Old Montreal;;CA-MTL
+CNBJ-D1;Dongcheng;;CN-BJ
+CNBJ-D2;Chaoyang;;CN-BJ
+CNBJ-D3;Haidian;;CN-BJ
+CNSH-D1;Pudong;;CN-SH
+CNSH-D2;Huangpu;;CN-SH
+DEBE-D1;Mitte;;DE-B
+DEBE-D2;Kreuzberg;;DE-B
+DEBE-D3;Charlottenburg;;DE-B
+DEBY-D1;Altstadt;;DE-M
+DEBY-D2;Schwabing;;DE-M
+DEBY-D3;Maxvorstadt;;DE-M
+DEBY-D4;Altstadt;;DE-N
+DEHH-D1;Altona;;DE-HH
+DEHH-D2;St. Pauli;;DE-HH
+EUBX-D1;Ixelles;;EU-BRU
+EUBX-D2;Schaerbeek;;EU-BRU
+FRIDF-D1;Le Marais;;FR-PAR
+FRIDF-D2;Montmartre;;FR-PAR
+FRIDF-D3;Latin Quarter;;FR-PAR
+FRPAC-D1;Vieux Nice;;FR-NCE
+FRPAC-D2;Le Panier;;FR-MRS
+GBENG-D1;Westminster;;GB-LDN
+GBENG-D2;Camden;;GB-LDN
+GBENG-D3;Shoreditch;;GB-LDN
+GBENG-D4;Northern Quarter;;GB-MAN
+GBSCT-D1;Old Town;;GB-EDI
+GBSCT-D2;New Town;;GB-EDI
+GBANT-D1;Titanic Quarter;;GB-BFS
+GBGLW-D1;Merchant City;;GB-GLW
+GBGLW-D2;West End;;GB-GLW
+GBINV-D1;City Centre;;GB-INV
+GBINV-D2;Crown;;GB-INV
+GBMSY-D1;Albert Dock;;GB-LIV
+GBSGL-D1;Cardiff Bay;;GB-CDF
+GBSGL-D2;Cathays;;GB-CDF
+GBSKY-D1;Harbour;;GB-PTR
+GBSKY-D2;Somerled Square;;GB-PTR
+GBSKY-D3;Bayfield;;GB-BRD
+GBSKY-D4;Castle;;GB-DVG
+GBSKY-D5;Ferry Terminal;;GB-UIG
+GBWI-D1;Town Centre;;GB-SYW
+GBWI-D2;Sandwick;;GB-SYW
+GBWI-D3;Harris;;GB-TAR
+GBWI-D4;North Uist;;GB-LMD
+GBWI-D5;Barra;;GB-CBY
+GBWM-D1;Digbeth;;GB-BHM
+GBWM-D2;Jewellery Quarter;;GB-BHM
+ILJM-D1;Old City;;IL-JLM
+ILJM-D2;Rehavia;;IL-JLM
+ILTA-D1;Florentin;;IL-TLV
+ILTA-D2;Neve Tzedek;;IL-TLV
+INDL-D1;Connaught Pl;;IN-NDL
+INDL-D2;Chanakyapuri;;IN-NDL
+INMH-D1;Bandra;;IN-MUM
+INMH-D2;Colaba;;IN-MUM
+INMH-D3;Andheri;;IN-MUM
+MMMDY-D1;Chanayethazan;;MM-MDL
+MMYGN-D1;Downtown;;MM-RGN
+MMYGN-D2;Bahan;;MM-RGN
+USCA-D1;Hollywood;;US-LA
+USCA-D2;Downtown;;US-LA
+USCA-D3;Venice;;US-LA
+USCA-D4;Mission;;US-SF
+USCA-D5;SoMa;;US-SF
+USNY-D1;Manhattan;;US-NYC
+USNY-D2;Brooklyn;;US-NYC
+USNY-D3;Queens;;US-NYC
+USTX-D1;Downtown;;US-AUS
+GBNDV-D1;Town Centre;;GB-BNS
+GBNDV-D2;Harbour;;GB-ILF
+GBSDV-D1;City Centre;;GB-EXE
+GBSDV-D2;St Leonards;;GB-EXE
+GBSDV-D3;Barbican;;GB-PLY
+GBSDV-D4;Hoe;;GB-PLY
+GBECO-D1;City Centre;;GB-TRU
+GBECO-D2;Fistral;;GB-NQY
+GBECO-D3;Towan;;GB-NQY
+GBWCO-D1;Harbour;;GB-PNZ
+GBWCO-D2;Downalong;;GB-STI
