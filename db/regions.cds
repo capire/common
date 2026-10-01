@@ -2,14 +2,14 @@ using { sap.common } from '@sap/cds/common';
 namespace sap.common.countries;
 
 extend common.Countries {
-  regions   : Composition of many Regions on regions._parent = $self.code;
+  regions   : Composition of many Regions on regions.parent = $self.code;
 }
 
 entity Regions : common.CodeList {
-  key code : String(5); // ISO 3166-2 alpha5 codes, e.g. DE-BW
-  children  : Composition of many Regions on children._parent = $self.code;
+  key code  : String(5); // ISO 3166-2 alpha5 codes, e.g. DE-BW
+  children  : Composition of many Regions on children.parent = $self.code;
   cities    : Composition of many Cities on cities.region = $self;
-  _parent   : String(11);
+  parent    : String(11);
 }
 entity Cities : common.CodeList {
   key code  : String(11);

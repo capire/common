@@ -1,0 +1,52 @@
+code,name,descr,region_code
+AU-MEL,Melbourne,,AUVIC
+AU-NCL,Newcastle,,AUNSW
+AU-SYD,Sydney,,AUNSW
+CA-MTL,Montreal,,CAQC
+CA-OTT,Ottawa,,CAON
+CA-TOR,Toronto,,CAON
+CN-BJ,Beijing,,CNBJ
+CN-SH,Shanghai,,CNSH
+DE-B,Berlin,,DEBE
+DE-HH,Hamburg,,DEHH
+DE-M,Munich,,DEBY
+DE-N,Nuremberg,,DEBY
+EU-BRU,Brussels,,EUBX
+FR-MRS,Marseille,,FRPAC
+FR-NCE,Nice,,FRPAC
+FR-PAR,Paris,,FRIDF
+GB-BFS,Belfast,,GBANT
+GB-BHM,Birmingham,,GBWM
+GB-BRD,Broadford,,GBSKY
+GB-CBY,Castlebay,,GBWI
+GB-CDF,Cardiff,,GBSGL
+GB-DVG,Dunvegan,,GBSKY
+GB-EDI,Edinburgh,,GBLOT
+GB-GLW,Glasgow,,GBGLW
+GB-INV,Inverness,,GBINV
+GB-LDN,London,,GBGL
+GB-LIV,Liverpool,,GBMSY
+GB-LMD,Lochmaddy,,GBWI
+GB-MAN,Manchester,,GBGM
+GB-PTR,Portree,,GBSKY
+GB-SYW,Stornoway,,GBWI
+GB-TAR,Tarbert,,GBWI
+GB-UIG,Uig,,GBSKY
+IL-JLM,Jerusalem,,ILJM
+IL-TLV,Tel Aviv,,ILTA
+IN-MUM,Mumbai,,INMH
+IN-NDL,New Delhi,,INDL
+MM-MDL,Mandalay,,MMMDY
+MM-RGN,Yangon,,MMYGN
+US-AUS,Austin,,USTX
+US-LA,Los Angeles,,USCA
+US-NYC,New York City,,USNY
+US-SF,San Francisco,,USCA
+GB-BNS,Barnstaple,,GBNDV
+GB-ILF,Ilfracombe,,GBNDV
+GB-EXE,Exeter,,GBSDV
+GB-PLY,Plymouth,,GBSDV
+GB-TRU,Truro,,GBECO
+GB-NQY,Newquay,,GBECO
+GB-PNZ,Penzance,,GBWCO
+GB-STI,St Ives,,GBWCO
