@@ -1,7 +1,7 @@
 using { sap.common.countries } from '../db/regions';
 using { sap.common } from '../db/currencies';
 
-service CommonService @hcql @mcp @agent {
+service CodeListsService @hcql @mcp @agent {
   entity Currencies as projection on common.Currencies;
   entity Countries as projection on common.Countries;
   entity Regions as projection on countries.Regions;

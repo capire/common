@@ -1,36 +1,35 @@
-using { CommonService } from './service';
+using { CodeListsService } from './service';
 
 // ========================================
 // INPUT VALIDATION CONSTRAINTS
 // ========================================
 
 // Currencies: code, symbol, and name are mandatory
-annotate CommonService.Currencies with {
+annotate CodeListsService.Currencies with {
   code @mandatory;
   name @mandatory;
 }
 
 // Countries: code and name are mandatory
-annotate CommonService.Countries with {
+annotate CodeListsService.Countries with {
   code @mandatory;
   name @mandatory;
 }
 
-// Regions: code, name, and country reference are mandatory
-annotate CommonService.Regions with {
+// Regions: code and name are mandatory; either country or parent must be given
+annotate CodeListsService.Regions with {
   code @mandatory;
   name @mandatory;
-  parent @mandatory;
 }
 
 // Cities: name and region reference are mandatory
-annotate CommonService.Cities with {
+annotate CodeListsService.Cities with {
   name @mandatory;
   region @mandatory;
 }
 
 // Districts: name and city reference are mandatory
-annotate CommonService.Districts with {
+annotate CodeListsService.Districts with {
   name @mandatory;
   city @mandatory;
 }
@@ -40,7 +39,7 @@ annotate CommonService.Districts with {
 // ========================================
 
 // Currencies: Assert valid code format and values
-annotate CommonService.Currencies with {
+annotate CodeListsService.Currencies with {
   code @assert: (case
     when code is null then 'Currency code must be specified'
     when length(trim(code)) < 3 then 'Currency code must be at least 3 characters'
@@ -71,7 +70,7 @@ annotate CommonService.Currencies with {
 }
 
 // Countries: Assert code format and name validity
-annotate CommonService.Countries with {
+annotate CodeListsService.Countries with {
   code @assert: (case
     when code is null then 'Country code must be specified'
     when length(code) < 2 or length(code) > 3 then 'Country code must be 2-3 characters'
@@ -87,25 +86,29 @@ annotate CommonService.Countries with {
 }
 
 // Regions: Assert hierarchical structure and code patterns
-annotate CommonService.Regions with {
+annotate CodeListsService.Regions with {
   code @assert: (case
     when code is null then 'Region code must be specified'
     when length(code) < 2 then 'Region code is too short'
-    when code = parent then 'Region cannot be its own parent'
+    when code = parent.code then 'Region cannot be its own parent'
   end);
 
   name @assert: (case
     when trim(name) = '' then 'Region name must not be empty'
   end);
 
+  country @assert: (case
+    when country is null and parent is null then 'Region must be linked to either a country or a parent region'
+    when country is not null and not exists country then 'Referenced country does not exist'
+  end);
+
   parent @assert: (case
-    when parent is null then 'Region must be linked to a parent country'
-    when not exists parent then 'Referenced parent country does not exist'
+    when parent is not null and not exists parent then 'Referenced parent region does not exist'
   end);
 }
 
 // Cities: Assert proper region reference and code patterns
-annotate CommonService.Cities with {
+annotate CodeListsService.Cities with {
   code @assert: (case
     when code is null then 'City code must be specified'
     when length(code) < 4 then 'City code is too short'
@@ -127,7 +130,7 @@ annotate CommonService.Cities with {
 }
 
 // Districts: Assert proper city reference and structure
-annotate CommonService.Districts with {
+annotate CodeListsService.Districts with {
   code @assert: (case
     when code is null then 'District code must be specified'
     when length(code) < 5 then 'District code is too short'

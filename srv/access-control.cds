@@ -1,35 +1,35 @@
-using { CommonService } from './service';
+using { CodeListsService } from './service';
 
 // ========================================
 // ACCESS CONTROL CONSTRAINTS
 // ========================================
 
 // Currencies: Read-only for public, create/update/delete for admin
-annotate CommonService.Currencies with @restrict:[
+annotate CodeListsService.Currencies with @restrict:[
   { grant:'READ', to:'any' },
-  { grant:'CREATE,UPDATE,DELETE', to:'admin' }
+  { grant:['CREATE','UPDATE','DELETE'], to:'admin' }
 ];
 
 // Countries: Read-only for public, create/update/delete for admin
-annotate CommonService.Countries with @restrict:[
+annotate CodeListsService.Countries with @restrict:[
   { grant:'READ', to:'any' },
-  { grant:'CREATE,UPDATE,DELETE', to:'admin' }
+  { grant:['CREATE','UPDATE','DELETE'], to:'admin' }
 ];
 
 // Regions: Read-only for public, create/update/delete for admin
-annotate CommonService.Regions with @restrict:[
+annotate CodeListsService.Regions with @restrict:[
   { grant:'READ', to:'any' },
-  { grant:'CREATE,UPDATE,DELETE', to:'admin' }
+  { grant:['CREATE','UPDATE','DELETE'], to:'admin' }
 ];
 
 // Cities: Read-only for public, create/update/delete for admin
-annotate CommonService.Cities with @restrict:[
+annotate CodeListsService.Cities with @restrict:[
   { grant:'READ', to:'any' },
-  { grant:'CREATE,UPDATE,DELETE', to:'admin' }
+  { grant:['CREATE','UPDATE','DELETE'], to:'admin' }
 ];
 
 // Districts: Read-only for public, create/update/delete for admin
-annotate CommonService.Districts with @restrict:[
+annotate CodeListsService.Districts with @restrict:[
   { grant:'READ', to:'any' },
-  { grant:'CREATE,UPDATE,DELETE', to:'admin' }
+  { grant:['CREATE','UPDATE','DELETE'], to:'admin' }
 ];
